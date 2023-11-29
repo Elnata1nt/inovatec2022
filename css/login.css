@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+
+:root {
+    --main-color: #0957f3; 
+    --link-color: #666666;
+    --text1: #999;
+    --highligth-text: #333;
+    --input-text: #555;
+    --write-color: #fff;
+    --points-list: #ccc;
+    --line-input: #d9d9d9;
+}
+
+body{
+    background: linear-gradient(to right,#a7c2a7,#285528,#1c3f28);
+    background-size: 400% 400%;
+        animation: animacao 30000ms infinite  ;
+    
+}
+@keyframes animacao{
+    0%{
+        background-position: 0 50%; 
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+/*fontes*/
+@font-face {
+    font-family: poppins-regular;
+    src: url('../fonts/Poppins/Poppins-Regular.ttf')
+
+}
+
+@font-face {
+    font-family: poppins-medium;
+    src: url('../fonts/Poppins/Poppins-Medium.ttf')
+
+}
+@font-face {
+    font-family: poppins-Bold;
+    src: url('../fonts/Poppins/Poppins-Bold.ttf')
+
+}
+@font-face {
+    font-family: poppins-SemiBold;
+    src: url('../fonts/Poppins/Poppins-SemiBold.ttf')
+
+}
+
+.login{  /*definiçao do formulario*/ 
+    width: 345px;
+    height: 455px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 100px;
+    border: solid 1px rgba(14, 14, 14, 0.389); 
+    top: 85px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 15px rgb(10, 10, 10);
+}
+
+.validacao{
+    text-align: center;
+font-family: poppins-regular,sans-serif;
+color: red;
+
+}
+.login-form-title { /*login titulo*/
+    display: block;
+    font-family: poppins-Bold;
+    font-size: 40px; /*tamanho da fonte do 'faça o login' */
+    color: rgba(28, 54, 33, 0.7);
+    line-height: 2.2; /* altura do 'faça o loging'*/
+    text-align: center;   
+}
+.divEmail, .divSenha {
+    margin: 30px 0px; 
+    display: flex;
+    margin-left: 1em;
+    margin-top: 2em;
+    height: 2.5em;
+    width: 90%; /*tamanho da linha */
+    position:relative;
+    border-bottom: 2px solid var(--line-input);/*grossura de linha*/ 
+  
+    
+    
+}
+#email, #senha{
+    font-size: 17px;
+    font-weight: 900px;
+    width: 100%;
+    
+    
+}
+input,input:focus{
+    border:none;
+    outline: 0;
+    
+}
+.text1 {
+    font-family: poppins-regular;
+    font-size:15px;
+    color: var(--text1);
+    line-height:2.5; /* dar espaço no primeiro link*/   
+}
+
+.text2 {
+    font-family: poppins-regular;
+    font-size:15px;
+    color: var(--main-color);
+    line-height: 2.5; /*dar espaço no ultimo link*/
+}
+.login-utils {
+    margin-top: 20px;
+    list-style: none;
+    
+
+    
+  }
+
+
+.login-button {
+    margin: 3px;
+    font-family: Poppins-Medium;
+    font-size:18px;
+    color: #070e1e92;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 60%;
+    height: 40px;
+    background: #356d35; /* cor do botao */
+    border-radius: 22px;
+    transition: all 0.4s;
+    margin-left: 65px;
+    border: 2px solid;
+  }
+
+.login-button:hover {
+    background-color: rgb(58, 150, 70);
+    transition: background-color 200ms ease-in-out;
+  }
+ 

@@ -1,0 +1,150 @@
+/*
+variaveis
+*/
+
+:root { 
+    --main-color: #0957f3; 
+    --link-color: #666666;
+    --text1: #999;
+    --highligth-text: #333;
+    --input-text: #555;
+    --write-color: #fff;
+    --points-list: #ccc;
+    --line-input: #d9d9d9;
+}
+.animated-background{
+    background: linear-gradient(to right,#a7c2a7,#285528,#1c3f28);
+    background-size: 400% 400%;
+    animation: animate-background 10s infinite ease-in-out;
+    
+}
+@keyframes animate-background{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url('../fonts/Poppins/Poppins-Regular.ttf')
+
+}
+
+@font-face {
+    font-family: poppins-medium;
+    src: url('../fonts/Poppins/Poppins-Medium.ttf')
+
+}
+@font-face {
+    font-family: poppins-Bold;
+    src: url('../fonts/Poppins/Poppins-Bold.ttf')
+
+}
+@font-face {
+    font-family: poppins-SemiBold;
+    src: url('../fonts/Poppins/Poppins-SemiBold.ttf')
+
+}
+
+/*********************define a altura do formulario*********************/
+
+.container {
+    width: 400px; 
+    height: 550px;
+    padding: 8px; /*posiciona o formulario8*/
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 70px;
+    border: solid 1px rgba(14, 14, 14, 0.522); 
+    top: 35px;
+    border-radius: 30px;
+    
+}
+
+/***********************linha do formulario**************************/
+
+.wrap-input { 
+    width: 90%;
+    position:relative;
+    border-bottom: 2px solid var(--line-input);/*grossura de linha*/ 
+    margin-left: 18px;  
+}
+input,input:focus{
+    border:none;
+    box-sizing: none;
+    outline: 0;
+    
+}
+
+
+.input-form {
+    margin: 06px ; 
+    font-Size: 17px;
+    color: var(--input-text);
+    display: block;
+    width: 382px;
+    height: 35px; /* margem do formulario de email e senha*/
+    background: transparent;  
+}
+
+/**********************faca o login*********************/
+
+.cadastro-form-title { 
+    display: block;
+    font-family: poppins-Bold;
+    font-size: 25px;
+    color: rgba(28, 54, 33, 0.7);
+    line-height: 1; /* altura do 'faça o loging'*/
+    text-align: center;
+    margin: 19px;
+    
+    
+
+}
+/*****************botao design-posicao-largura-altura-cor****************/
+.button-dark{
+    background: #369733 !important;
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    font-size:18px;
+    margin:20px 0px;
+    text-align: center;
+    margin-left: 95px;
+    
+    
+}
+.button-dark:hover  {
+    background-color: #1c3f28;
+  }
+
+
+
+
+.text1 {
+    font-family: poppins-regular;
+    font-size:15px;
+    line-height:20px; 
+    color: var(--text1);
+    margin-left: -30px;
+}
+
+.text2 {
+    font-family: poppins-regular;
+    font-size:15px;
+    color: var(--main-color);
+    line-height: 1.5;
+    
+}
+
+
+
+  
+  
+

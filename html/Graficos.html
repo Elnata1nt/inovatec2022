@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/png" href="/images/TEC CC1.png">
+    <link rel="stylesheet" type="text/css" href="/css/graficos.css">
+    <title>TEC - Technological Ecological Collect</title>
+
+<body>
+    <header>
+
+        <a class="nav-item"><a href="inicio.html" class="nav-link">Inicio</a>
+
+            <img class="logo" src="/images/TEC CC1.png" alt="Inicio" width="90px" title="Inicio">
+
+    </header>
+
+    <!---------------------------caixas de conversao de pontos/moeda---------------------------->
+
+    <div class="ConverterPontos">
+        <div class="convertor-form-title">
+            Converção de kg
+        </div> 
+
+           <div class="divCenterMateriais">
+               <select class="MateriaisColetados"> 
+                   <option value="" class="ss">Escolha um Material</option>
+                   <option value="1.50" class="plastico">Plastico</option>
+                   <option value="0.62" class="vidro">Vidro</option>
+                   <option value="0.65" class="papelao">Papel</option>
+                   <option value="8.5" class="aluminio">Aluminio</option>
+                   <option value="2" class="oleoMineral">Oleo Mineral Usado</option>
+                   <option value="1.5" class="oleoVegetal">Oleo Vegetal</option>
+                   <option value="15" class="lixoEletronico">Lixo Eletronico</option>
+                </select>
+            </div>    
+
+        <div class="DivKG">
+            <input type="number" min="0" id="pontos1" placeholder="quantos KG">
+        </div>
+        
+
+        <div class="button">
+            <button class="ConvPoints-button" type="button" onclick="CvPt()">CONVERTER</button>
+        </div>
+
+ </div>
+
+        
+ <div class="divResultado">
+     <p class="convertor-form-title2">Resuldado</p>
+     
+
+     <div class="resultadoEmPontosFormato">
+         <p class="resultado">0</p>
+
+             <span>(</span><span>Reais)</span>
+     </div>
+   
+
+
+ </div>
+
+
+ 
+ 
+ 
+ <!----------------------graficos----------------------->
+ 
+ <div class="divCenter">
+
+     <div class="rm">
+         <div id="regionsMaps"></div>
+        </div>
+        
+        <div class="rm2">
+            <div id="chart_div2"></div>
+        </div>
+        
+        <div class="rm2">
+            <div id="chart_div"></div>
+        </div>
+        
+        
+    </div>
+    
+    <div class="rm3">
+        <p class="convertor-form-title2">Materiais Coletados</p>
+        <div id="donutchart"></div>
+    </div>
+    
+
+
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="../graficos.js"></script>
+<script src="../convercao.js"></script>
+
+</html>

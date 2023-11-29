@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/png" href="/images/TEC CC1.png">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>TEC - Technological Ecological Collect</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="/images/TEC CC1.png" alt="Inicio" width="90px" title="Inicio">
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                   <li class="nav-item"><a href="inicio.html" class="nav-link">Inicio</a></li>
+                   <li class="nav-item"><a href="projeto.html" class="nav-link">Instituições</a></li>
+                   <li class="nav-item"><a href="Graficos.html" class="nav-link">Graficos</a></li>
+                   <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="lupa">
+                <img src="/images/lupa.svg" alt="Lupa">
+            </div>
+        </nav>
+    </header>
+
+<div class="slider">
+     <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+            <div class="slide first">
+                <img src="/images/empresa.png"  alt="Empresa TEC">
+            </div>
+            <div class="slide">
+                <img src="/images/cell.jpg" alt="Celular">
+            </div>
+            <div class="slide">
+                <img src="/images/lamp.jpg" alt="Lâmpada">
+            </div>
+
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+        </div>     
+    </div>
+</div>
+
+    
+ <div class="conteiner">
+
+     <div>
+         <h3>+3.500</h3>
+         <p>casas cadastradas</p>
+     </div>
+
+     <div>
+         <h3>+500</h3>
+         <p>De funcionarios</p>
+     </div>
+     
+     <div>
+         <h3>+4</h3>
+         <p>Anos no mercado</p>
+     </div>
+
+  </div>
+
+
+
+     <script type="text/javascript">
+        var counter = 2;
+        setInterval(function(){
+            document.getElementById('radio'+ counter).checked = true;
+            counter++;
+            if(counter > 3){
+                counter = 1;
+            }
+        }, 4000);
+    </script> 
+
+
+</body>
+</html>
